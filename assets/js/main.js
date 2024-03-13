@@ -223,7 +223,7 @@
 
       let portfolioFilters = select('#portfolio-flters li', true);
 
-      on('click', '#portfolio-flters li', function(e) {
+      on('click', '#portfolio-filters li', function(e) {
         e.preventDefault();
         portfolioFilters.forEach(function(el) {
           el.classList.remove('filter-active');
@@ -292,7 +292,7 @@ if (currentTheme) {
 function switchTheme(e) {
     if (e.target.checked) {
         document.documentElement.setAttribute('data-theme', 'dark');
-        document.getElementById('logo').src="assets/img/logo.png";
+        document.getElementById('logo').src="assets/img/logo2.png";
         localStorage.setItem('theme', 'dark');
     }
     else {      

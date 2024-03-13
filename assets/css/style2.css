@@ -4,22 +4,23 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:400,400italic,700|Sansita+One);
 
  :root {
-    --mycolor:#08391c;;
+    --mycolor:#666666;
     --mybackground: rgba(16, 110, 234, 0.8);
     --primary-color: #302AE6;
     --secondary-color: #536390;
     --font-color: #424242;
-    --bg-color: #fff;
+    --bg-color: #ffb6c1;
     --heading-color: #292922;
+    
 }
 
 [data-theme="dark"] {
-    --mycolor:#9210ea;;
-    --mybackground: rgba(16, 110, 234, 0.8);;
+    --mycolor:#ffa64d;
+    --mybackground: rgba(16, 110, 234, 0.8);
     --primary-color: #9A97F3;
     --secondary-color: #818cab;
     --font-color: #e1e1ff;
-    --bg-color: #1d1d9f;
+    --bg-color: #ffe4c4;
     --heading-color: #abb0bc;
    
 }
@@ -47,7 +48,7 @@
 }
 
 .slider {
-  background-color: #ccc;
+  background-color: #d9d9d9;
   bottom: 0;
   cursor: pointer;
   left: 0;
@@ -69,7 +70,7 @@
 }
 
 input:checked + .slider {
-  background-color: #66bb6a;
+  background-color: #996600;
 }
 
 input:checked + .slider:before {
@@ -255,7 +256,7 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--mycolor);
 }
 #header .logo img {
-  max-height: 160px;
+  max-height: 72px;
 }
 
 .scrolled-offset {
@@ -478,7 +479,7 @@ h1, h2, h3, h4, h5, h6 {
 #hero {
   width: 100%;
   height: 75vh;
-  background: url("../img/fundal.jpg") top left;
+  background: url("../img/fundal.jpeg") top left;
   background-size: cover;
   position: relative;
 }
@@ -506,9 +507,9 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--mycolor);
 }
 #hero h2 {
-  color: #555555;
+  color: #080606;
   margin: 5px 0 30px 0;
-  font-size: 24px;
+  font-size: 48px;
   font-weight: 400;
 }
 #hero .btn-get-started {
@@ -616,6 +617,9 @@ section {
 .section-title p {
   margin: 15px auto 0 auto;
   font-weight: 600;
+}
+.section-title ul li {
+  text-align:left;
 }
 @media (min-width: 1024px) {
   .section-title p {
